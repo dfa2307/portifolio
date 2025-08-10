@@ -1,55 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/output.css">
-    <link rel="stylesheet" href="./src/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <title>Daniel Francisco</title>
-</head>
-<body class="font-secondary bg-gradient-to-t from-indigo-500 to-indigo-950">
+  </head>
+  <body class="font-secondary bg-gradient-to-t from-indigo-500 to-indigo-800">
     <!-- CABEÇALHO -->
     <header class="flex justify-center">
-        <nav class="bg-white w-fit my-5 rounded-4xl">
-            <ul class="flex gap-4 py-2 px-2.5">
-                <li class="hover:bg-gray-300 rounded-l-4xl">HOME</li>
-                <li class="hover:bg-gray-300">SOBRE</li>
-                <li class="hover:bg-gray-300">PROJETOS</li>
-                <li class="hover:bg-gray-300 rounded-r-4xl">CONTATO</li>
-            </ul>
-        </nav>
+      <nav
+        class="bg-transparent shadow-2xl/70 w-fit my-5 rounded-4xl font-bold text-blue-50"
+      >
+        <ul class="flex">
+          <li class="hover:bg-gray-300/30 rounded-l-4xl p-2">HOME</li>
+          <li class="hover:bg-gray-300/30 p-2">SOBRE</li>
+          <li class="hover:bg-gray-300/30 p-2">PROJETOS</li>
+          <li class="hover:bg-gray-300/30 rounded-r-4xl p-2">CONTATO</li>
+        </ul>
+      </nav>
     </header>
     <!-- FIM CABEÇALHO -->
 
     <!-- CONTEÚDO PRINCIPAL -->
     <main class="">
-        <!-- HOME -->
-        <section class="flex flex-col justify-center items-center gap-8 min-h-dvh">
-            <img src="./img/fotoPerfil.jpg" alt="Foto do desenvolvedor Daniel" class="w-1/2 rounded-full">
-            <div class="text-center text-sm text-amber-50">
-                <h1 class="font-primary  text-6xl tracking-widest mb-2">WELCOME</h1>
-                <p>Me chamo Daniel Francisco, sou Desenvolvedor Front-End</p>
-            </div>     
-        </section>
-        <!-- FIM HOME -->
+      <!-- HOME -->
+      <section class="flex items-center min-h-dvh p-5">
+        <div
+          class="flex flex-col justify-center items-center gap-8 bg-transparent shadow-2xl/70 rounded-2xl px-6 py-10"
+        >
+          <img
+            src="./img/fotoPerfil.jpg"
+            alt="Foto do desenvolvedor Daniel"
+            class="w-1/2 rounded-full"
+          />
+          <div class="text-center text-sm text-amber-50">
+            <h1 class="font-primary text-6xl tracking-widest mb-2">WELCOME</h1>
+            <p>Me chamo Daniel Francisco, sou Desenvolvedor Front-End</p>
+          </div>
+        </div>
+      </section>
+      <!-- FIM HOME -->
 
-        <!-- SOBRE -->
-        <section class="min-h-dvh">
-            <div class="flex flex-col items-center pt-3">
-                <h1 class="font-primary text-6xl tracking-widest mb-2 text-amber-50">SOBRE</h1>
-                <p class="text-amber-50 p-9 text-justify">
-                    Sou Daniel Francisco de Almeida, profissional com trajetória iniciada na área da tecnologia como técnico em eletrônica. Desde então, venho ampliando meus conhecimentos e experiências em desenvolvimento de software.
-                    <br>
-                    <br>
-                    🎓 Sou formado em Tecnólogo em Análise e Desenvolvimento de Sistemas e Técnico em Desenvolvimento de Sistemas, e atualmente estou cursando uma Pós-graduação em Desenvolvimento Full Stack pela PUC Minas.
-                    <br>
-                    <br>
-                    🚀 Tenho atuado em projetos práticos utilizando HTML, CSS, JavaScript e Tailwind CSS, focando em interfaces modernas, acessíveis e responsivas. Busco constantemente evoluir minhas habilidades e contribuir com soluções que gerem valor para as pessoas e organizações.
+      <!-- SOBRE -->
+      <section class="min-h-dvh">
+        <div
+          class="flex flex-col items-center pt-3 bg-transparent shadow-2xl/70 rounded-2xl m-5"
+        >
+          <h1 class="font-primary text-6xl tracking-widest mb-2 text-amber-50">
+            SOBRE
+          </h1>
+          <p class="text-amber-50 p-9 text-justify">
+            Sou Daniel Francisco de Almeida, profissional com trajetória
+            iniciada na área da tecnologia como técnico em eletrônica. Desde
+            então, venho ampliando meus conhecimentos e experiências em
+            desenvolvimento de software.
+            <br />
+            <br />
+            🎓 Sou formado em Tecnólogo em Análise e Desenvolvimento de Sistemas
+            e Técnico em Desenvolvimento de Sistemas, e atualmente estou
+            cursando uma Pós-graduação em Desenvolvimento Full Stack pela PUC
+            Minas.
+            <br />
+            <br />
+            🚀 Tenho atuado em projetos práticos utilizando HTML, CSS,
+            JavaScript e Tailwind CSS, focando em interfaces modernas,
+            acessíveis e responsivas. Busco constantemente evoluir minhas
+            habilidades e contribuir com soluções que gerem valor para as
+            pessoas e organizações.
+          </p>
+        </div>
+      </section>
+      <!-- FIM SOBRE -->
+
+      <!-- PROJETO -->
+
+      <section class="flex flex-col items-center min-h-dvh mt-20">
+          <h1
+            class="font-primary text-6xl tracking-widest text-amber-50 text-center mt-2"
+          >
+            PROJETOS
+          </h1>
+          <!--SWIPER-->
+          <div class="swiper m-12 p-4 w-96">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="p-3 bg-transparent shadow-2xl/60 rounded-2xl flex flex-col items-center">
+                <img
+                  src="./img/projetoNumeroSecreto.PNG"
+                  alt="imagem do site"
+                  class="rounded-2xl w-2xs"
+                />
+                <p class=" text-justify text-amber-50 mt-4 p-3">
+                  Projeto realizado no curso da alura, onde apliquei os conhecimentos do DOM em JavaScript para desenvolver um jogo em que o jogador tenta adivinhar o número sorteado pelo computador.
                 </p>
+
+                <div class="text-xs p-3 flex justify-around gap-1.5">
+                  <span class="bg-amber-500 p-1 rounded-sm flex"><img class="w-3 mr-1" src="./img/icons8-html-60.png" alt="">HTML</span>
+                  <span class="bg-sky-500 p-1 rounded-sm flex"><img class="w-3 mr-1" src="./img/icons8-css-60.png" alt="">CSS</span>
+                  <span class="bg-amber-300 p-1 rounded-sm flex"><img class="w-3 mr-1" src="./img/icons8-javascript-50.png" alt="">JavaScript</span>
+                </div>
+              </div>
+                          
             </div>
-        </section>
-        <!-- FIM SOBRE -->
+
+              <div class="swiper-slide p-3 bg-transparent shadow-2xl/90 rounded-2xl">
+                <img
+                  src="./img/projetoNumeroSecreto.PNG"
+                  alt="imagem do site"
+                  class="rounded-2xl w-2xs"
+                />
+                <p class=" text-justify text-amber-50 mt-4 p-3">
+                  Projeto realizado no curso da alura, onde apliquei os conhecimentos do DOM em JavaScript para desenvolver um jogo em que o jogador tenta adivinhar o número sorteado pelo computador.
+                </p>
+
+                <div class="text-xs p-3 flex justify-around gap-1.5">
+                  <span class="bg-amber-500 p-1 rounded-sm flex"><img class="w-3 mr-1" src="./img/icons8-html-60.png" alt="">HTML</span>
+                  <span class="bg-sky-500 p-1 rounded-sm flex"><img class="w-3 mr-1" src="./img/icons8-css-60.png" alt="">CSS</span>
+                  <span class="bg-amber-300 p-1 rounded-sm flex"><img class="w-3 mr-1" src="./img/icons8-javascript-50.png" alt="">JavaScript</span>
+                </div>          
+              </div>
+
+              <div class="swiper-slide p-3 bg-transparent shadow-2xl/90 rounded-2xl">
+                <img
+                  src="./img/projetoNumeroSecreto.PNG"
+                  alt="imagem do site"
+                  class="rounded-2xl w-2xs"
+                />
+                <p class=" text-justify text-amber-50 mt-4 p-3">
+                  Projeto realizado no curso da alura, onde apliquei os conhecimentos do DOM em JavaScript para desenvolver um jogo em que o jogador tenta adivinhar o número sorteado pelo computador.
+                </p>
+
+                <div class="text-xs p-3 flex justify-around gap-1.5">
+                  <span class="bg-amber-500 p-1 rounded-sm flex"><img class="w-3 mr-1" src="./img/icons8-html-60.png" alt="">HTML</span>
+                  <span class="bg-sky-500 p-1 rounded-sm flex"><img class="w-3 mr-1" src="./img/icons8-css-60.png" alt="">CSS</span>
+                  <span class="bg-amber-300 p-1 rounded-sm flex"><img class="w-3 mr-1" src="./img/icons8-javascript-50.png" alt="">JavaScript</span>
+                </div>          
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!--FIM SWIPER-->
+      </section>
+
+      <!-- FIM PROJETO -->
     </main>
     <footer></footer>
-</body>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./app.js"></script>
+    
 </html>
