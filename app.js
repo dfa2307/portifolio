@@ -16,3 +16,11 @@ const swiper = new Swiper('.swiper', {
   },
 
 });
+
+const btnNav = document.getElementById("btn-nav")
+const menuNav = document.getElementById("navResposivo")
+
+btnNav.addEventListener("click", ()=>{
+  btnNav.classList.toggle("ativo")
+  menuNav.classList.toggle("menuNav")
+})
