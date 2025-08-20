@@ -9,6 +9,36 @@
 
 @layer base{
 
+    /* INÍCIO DA ANIMAÇÃO DA SECTION SKILSS */
+
+    .invisibleLE{
+        opacity: 0;
+        filter: blur(10px);
+        transition: all 1s;
+        transform: translateX(-100px);
+    }
+
+    .showLE{
+        opacity: 1;
+        filter: blur(0px);
+        transition: all 1s;
+        transform: translateX(0px);
+    }
+
+    .invisibleLD{
+        opacity: 0;
+        filter: blur(10px);
+        transition: all 1s;
+        transform: translateX(100px)
+    }
+
+    .showLD{
+        opacity: 1;
+        filter: blur(0px);
+        transition: all 1s;
+        transform: translateX(0px);
+    }
+
     .menuNav{
         display: none !important;
     }

@@ -35,11 +35,11 @@
         class="menuNav bg-transparent shadow-2xl/70 w-40 my-5 font-bold text-blue-50"
       >
         <ul class="w-full text-center">
-          <li class="hover:bg-gray-300/30 p-2 w-full">HOME</li>
-          <li class="hover:bg-gray-300/30 p-2 w-full">SOBRE</li>
-          <li class="hover:bg-gray-300/30 p-2 w-full">PROJETOS</li>
-          <li class="hover:bg-gray-300/30 p-2 w-full">SKILLS</li>
-          <li class="hover:bg-gray-300/30 p-2 w-full">CONTATO</li>
+          <li class="hover:bg-gray-300/30 p-2 w-full"><a href="#home">HOME</a></li>
+          <li class="hover:bg-gray-300/30 p-2 w-full"><a href="#sobre">SOBRE</a></li>
+          <li class="hover:bg-gray-300/30 p-2 w-full"><a href="#projetos">PROJETOS</a></li>
+          <li class="hover:bg-gray-300/30 p-2 w-full"><a href="#skills">SKILLS</a></li>
+          <li class="hover:bg-gray-300/30 p-2 w-full"><a href="#contato">CONTATO</a></li>
         </ul>
       </nav>
     </header>
@@ -50,7 +50,7 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <main class="">
       <!-- HOME -->
-      <section class="flex items-center min-h-dvh p-5">
+      <section id="home" class="flex items-center min-h-dvh p-5">
         <div
           class="flex flex-col justify-center items-center gap-8 bg-transparent shadow-2xl/70 rounded-2xl px-6 py-10"
         >
@@ -68,7 +68,7 @@
       <!-- FIM HOME -->
 
       <!-- SOBRE -->
-      <section class="min-h-dvh">
+      <section id="sobre" class="min-h-dvh">
         <div
           class="flex flex-col items-center pt-3 bg-transparent shadow-2xl/70 rounded-2xl m-5"
         >
@@ -100,7 +100,7 @@
 
       <!-- PROJETO -->
 
-      <section class="flex flex-col justify-center items-center min-h-dvh">
+      <section id="projetos" class="flex flex-col justify-center items-center min-h-dvh">
         <h1
           class="font-primary text-6xl tracking-widest text-amber-50 text-center mt-2"
         >
@@ -534,7 +534,7 @@
 
       <!-- SKILLS -->
 
-      <section class="min-h-dvh p-3">
+      <section id="skills" class="min-h-dvh p-3 overflow-x-hidden">
         <h1
           class="font-primary text-6xl tracking-widest text-amber-50 text-center mt-2 mb-10"
         >
@@ -543,67 +543,67 @@
 
         <div class="grid grid-cols-2 gap-y-10">
 
-          <div class="h-50 justify-self-center self-center w-50">
+          <div class="h-50 justify-self-center self-center w-50 invisibleLE">
             <img src="./img/icons8-javascript-240.png" alt="">
           </div>
 
-          <div class="h-50 bg-transparent justify-self-center self-center rounded-2xl shadow-2xl/90">
+          <div class="h-50 bg-transparent justify-self-center self-center rounded-2xl shadow-2xl/90 invisibleLD">
             <div class="flex justify-center items-center min-h-full p-4">
               <p class="text-justify text-amber-50 text-sm">JavaScript uma das linguagens mais utilizadas no mundo, vários dos projetos que programei usei esta linguagem para manipular o DOM</p>
             </div>  
           </div>
 
-          <div class="h-50 bg-transparent justify-self-center self-center rounded-2xl shadow-2xl/90">
+          <div class="h-50 bg-transparent justify-self-center self-center rounded-2xl shadow-2xl/90 invisibleLE">
             <div class="flex justify-center items-center min-h-full p-4">
               <p class="text-justify text-amber-50 text-sm">TailwindCSS é uma framework de CSS, que também pode ser integrada com frameworks de JavaScript como o REACT.</p>
             </div> 
           </div>
 
-          <div class="bg-white rounded-2xl w-40 h-40 justify-self-center self-center">
+          <div class="bg-white rounded-2xl w-40 h-40 justify-self-center self-center invisibleLD">
             <div class="flex justify-center items-center min-h-full">
               <img src="./img/icons8-tailwind-css-240.png" alt="" class="w-30">
             </div>
           </div>
 
-          <div class="h-50 justify-self-center self-center w-50">
+          <div class="h-50 justify-self-center self-center w-50 invisibleLE">
             <img src="./img/icons8-css-240.png" alt="">
           </div>
 
-          <div class="h-50 bg-transparent justify-self-center self-center rounded-2xl shadow-2xl/90">
+          <div class="h-50 bg-transparent justify-self-center self-center rounded-2xl shadow-2xl/90 invisibleLD">
             <div class="flex justify-center items-center min-h-full p-4">
               <p class="text-justify text-amber-50 text-sm">CSS é ultilizado para dar estilo as páginas, não somente isso, com CSS é possível criar animações e transições.</p>
             </div> 
           </div>
 
-          <div class="h-50 bg-transparent justify-self-center self-center rounded-2xl shadow-2xl/90">
+          <div class="h-50 bg-transparent justify-self-center self-center rounded-2xl shadow-2xl/90 invisibleLE">
             <div class="flex justify-center items-center min-h-full p-4">
               <p class="text-justify text-amber-50 text-sm">HTML é uma linguagem de marcação de texto, onde separamos as seções das nossas páginas e damos sentido aos leitores de telas.</p>
             </div> 
           </div>
 
-          <div class="h-50 justify-self-center self-center w-50 ">
+          <div class="h-50 justify-self-center self-center w-50 invisibleLD">
             <img src="./img/icons8-html-240.png" alt="">
           </div>
 
-          <div class="bg-white rounded-2xl w-40 h-40 justify-self-center self-center">
+          <div class="bg-white rounded-2xl w-40 h-40 justify-self-center self-center invisibleLE">
             <div class="flex justify-center items-center min-h-full">
               <img src="./img/icons8-git-240.png" alt="" class="w-40">
             </div>
           </div>
 
-          <div class="h-50 bg-transparent justify-self-center self-center rounded-2xl shadow-2xl/90">
+          <div class="h-50 bg-transparent justify-self-center self-center rounded-2xl shadow-2xl/90 invisibleLD">
             <div class="flex justify-center items-center min-h-full p-4">
               <p class="text-justify text-amber-50 text-sm">GIT é usado para versionamento de código, com ele é possível controlar as manipulações dos projetos e criar repositórios.</p>
             </div> 
           </div>
 
-          <div class="h-50 bg-transparent justify-self-center self-center rounded-2xl shadow-2xl/90">
+          <div class="h-50 bg-transparent justify-self-center self-center rounded-2xl shadow-2xl/90 invisibleLE">
             <div class="flex justify-center items-center min-h-full p-4">
               <p class="text-justify text-amber-50 text-sm">GitHub é uma plataforma online que é utilizada para publicar repositórios para que possa ser compartilhados com a quipe, GitHub é basedo no sistema GIT.</p>
             </div> 
           </div>
           
-          <div class="bg-white rounded-2xl w-40 h-40 justify-self-center self-center">
+          <div class="bg-white rounded-2xl w-40 h-40 justify-self-center self-center invisibleLD">
             <div class="flex justify-center items-center min-h-full">
               <img src="./img/icons8-github-96.png" alt="" class="w-40">
             </div>
@@ -613,6 +613,42 @@
       </section>
 
       <!-- FIM SKILLS -->
+
+      <!-- INÍCIO CONTATO -->
+
+      <section id="contato" class="min-h-dvh flex flex-col">
+        <h1
+          class="font-primary text-6xl tracking-widest text-amber-50 text-center mt-10 mb-10 "
+        >
+          CONTATO
+        </h1>
+
+        <p class="text-amber-50 font-bold text-center">
+          Vamos transformar sua ideia em um site incrível? <span class="text-2xl">Entre em contato comigo!</span> 
+        </p>
+
+        <div class="flex flex-col items-center flex-1 justify-center">
+
+          <div class="flex flex-col items-center">
+            <h2 class="font-bold text-2xl text-amber-50">Linkedin:</h2>
+            <a href=""><img src="./img/icons8-linkedin-240.png" alt="" class="w-30"></a>
+          </div>
+
+          <div class="flex flex-col items-center gap-3 mb-4">
+            <h2 class="font-bold text-2xl text-amber-50">GitHub:</h2>
+            <a href=""><img src="./img/icons8-github-250.png" alt="" class="rounded-2xl w-22"></a>
+          </div>
+
+          <div class="flex flex-col items-center gap-3">
+            <h2 class="font-bold text-2xl text-amber-50">E-mail:</h2>
+            <a href=""><img src="./img/icons8-outlook-240.png" alt="" class="w-22 bg-white rounded-2xl"></a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- FIM CONTATO-->
+
     </main>
     <footer></footer>
   </body>
